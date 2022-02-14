@@ -47,8 +47,22 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
   -- Colorschemes
-  use { "ellisonleao/gruvbox.nvim" }
+  use "ellisonleao/gruvbox.nvim"
 
+  -- LSP
+  use "neovim/nvim-lspconfig"
+  use "williamboman/nvim-lsp-installer"
+
+  -- CMP Plugins
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "saadparwaiz1/cmp_luasnip"
+
+  -- Snippets
+  use "L3MON4D3/LuaSnip"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
