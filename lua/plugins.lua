@@ -67,6 +67,10 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
+  -- Bufferline
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
@@ -79,7 +83,7 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  -- NVim Tree
+  -- Nvim Tree
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
