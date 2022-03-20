@@ -70,6 +70,8 @@ return packer.startup(function(use)
   -- Bufferline
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
+  -- Toggle Term
+  use {"akinsho/toggleterm.nvim"}
 
   -- Treesitter
   use {
