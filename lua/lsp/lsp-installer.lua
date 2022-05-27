@@ -10,6 +10,11 @@ lsp_installer.on_server_ready(function(server)
     --     opts.root_dir = function() ... end
     -- end
 
+    if server.name == "sumneko_lua" then
+      local sumneko_opts = require("lua.lsp.settings.sumneko_lua")
+      opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+    end
+
     -- This setup() function will take the provided server configuration and decorate it with the necessary properties
     -- before passing it onwards to lspconfig.
     -- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
