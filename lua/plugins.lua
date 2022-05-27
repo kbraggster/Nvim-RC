@@ -85,14 +85,8 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  -- Nvim Tree
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    },
-    config = function() require'nvim-tree'.setup {} end
-}
+  -- Nerdtree
+  use "preservim/nerdtree"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

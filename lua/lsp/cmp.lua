@@ -10,6 +10,7 @@ end
 
 require("luasnip/loaders/from_vscode").lazy_load()
 
+
 local check_backspace = function()
   local col = vim.fn.col "." - 1
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
@@ -44,7 +45,6 @@ local kind_icons = {
   TypeParameter = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
-
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -121,9 +121,10 @@ cmp.setup {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
-  documentation = {
-    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-  },
+  --documentation = {
+    --border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    --cmp.config.window.bordered(),
+  --},
   experimental = {
     ghost_text = false,
     native_menu = false,
