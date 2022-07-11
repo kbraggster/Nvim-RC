@@ -97,3 +97,4 @@ keymap("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
 
 -- Bufferline
 keymap("n", "<C-x>", ":bdelete!<cr>", opts)
+keymap("n", "<S-x>", ":close!<cr>", opts)
