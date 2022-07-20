@@ -86,8 +86,8 @@ keymap("n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>
 keymap("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 vim.cmd([[ command! Format execute 'lua vim.lsp.buf.format{async=true}' ]])
 
--- Nerdtree
-keymap("n", "<leader>e", ":NERDTreeToggle<cr>", opts)
+-- Nvim-Tree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<cr>", opts)
