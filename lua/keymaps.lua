@@ -25,8 +25,6 @@ keymap("n", "<S-j>", "<C-w>j", opts)
 keymap("n", "<S-k>", "<C-w>k", opts)
 keymap("n", "<S-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
-
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -77,10 +75,10 @@ keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
 --keymap(bufnr, "n", "<leader>f", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 keymap("n", "[d", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
 keymap(
-	"n",
-	"gl",
-	'<cmd>lua vim.diagnostic.open_float({ border = "rounded" })<CR>',
-	opts
+  "n",
+  "gl",
+  '<cmd>lua vim.diagnostic.open_float({ border = "rounded" })<CR>',
+  opts
 )
 keymap("n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
 keymap("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
@@ -88,6 +86,7 @@ vim.cmd([[ command! Format execute 'lua vim.lsp.buf.format{async=true}' ]])
 
 -- Nvim-Tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>E", ":NvimTreeRefresh<cr>", opts)
 
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<cr>", opts)
