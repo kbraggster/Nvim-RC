@@ -83,6 +83,7 @@ keymap(
 keymap("n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
 keymap("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 vim.cmd([[ command! Format execute 'lua vim.lsp.buf.format{async=false}' ]])
+keymap("n", "<S-f>", ":Format<cr>", opts)
 
 -- Nvim-Tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
