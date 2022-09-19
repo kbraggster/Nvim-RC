@@ -36,7 +36,7 @@ local default_capabilities = {
       editsNearCursor = true,
     },
   },
-  offsetEncoding = { 'utf-8', 'utf-16' },
+  offsetEncoding = { 'utf-16' },
 }
 
 return {

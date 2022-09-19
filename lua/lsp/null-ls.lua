@@ -7,6 +7,7 @@ local formatting = null_ls.builtins.formatting
 --local diagnostics = null.ls.builtins.diagnostics
 null_ls.setup({
     debug = true,
+    offsetEncoding = {"utf-16"},
     sources = {
         formatting.prettier,
         formatting.clang_format.with( { extra_args = {"-style={IndentWidth: 4, BreakBeforeBraces: Allman, ColumnLimit: 110, PointerAlignment: Left}"} }),
