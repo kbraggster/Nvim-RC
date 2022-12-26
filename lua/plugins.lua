@@ -54,7 +54,8 @@ return packer.startup(function(use)
   use { "williamboman/mason.nvim" } -- simple to use language server installer
   use { "williamboman/mason-lspconfig.nvim" }
   use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
-  use { "RRethy/vim-illuminate" }
+  use { "RRethy/vim-illuminate" } -- highlights used references of variables on cursor hover
+  use { "ray-x/lsp_signature.nvim" } -- helps with function signatures in LSP
 
   -- CMP Plugins
   use "hrsh7th/nvim-cmp"
