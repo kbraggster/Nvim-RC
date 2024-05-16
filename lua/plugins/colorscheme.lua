@@ -8,14 +8,18 @@ return {
   },
 
   -- add catppuccin
-  { "catppuccin/nvim" },
-  lazy = false,
-  name = "catppuccin",
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+  },
 
   -- add papercolor
-  { "NLKNguyen/papercolor-theme" },
-  lazy = false,
-  name = "papercolor",
+  {
+    "NLKNguyen/papercolor-theme",
+    lazy = false,
+    name = "papercolor",
+  },
 
   -- add onedark
   {
@@ -36,7 +40,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "catppuccin",
     },
   },
 }
