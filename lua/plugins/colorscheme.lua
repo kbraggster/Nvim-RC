@@ -1,4 +1,5 @@
 return {
+
   -- add gruvbox
   {
     "ellisonleao/gruvbox.nvim",
@@ -12,6 +13,9 @@ return {
     "catppuccin/nvim",
     lazy = false,
     name = "catppuccin",
+    opts = {
+      transparent_background = true,
+    }
   },
 
   -- add papercolor
