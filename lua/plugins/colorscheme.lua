@@ -4,7 +4,8 @@ return {
   {
     "ellisonleao/gruvbox.nvim",
     opts = {
-      contrast = "hard",
+      contrast = "medium",
+      transparent_mode = true,
     }
   },
 
@@ -44,7 +45,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "gruvbox",
     },
   },
 }
